@@ -42,3 +42,20 @@
 [1488997194] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
 [1488997194] wproc:   stderr line 01: /bin/sh: /bin/mail: No such file or directory
 [1488997194] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1489000351] Auto-save of retention data completed successfully.
+[1489000794] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1489000794] wproc: NOTIFY job 36 from worker Core Worker 28393 is a non-check helper but exited with return code 127
+[1489000794] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1489000794] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1489000794] wproc:   stderr line 01: /bin/sh: /bin/mail: No such file or directory
+[1489000794] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1489003951] Auto-save of retention data completed successfully.
+[1489004394] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1489004394] wproc: NOTIFY job 66 from worker Core Worker 28392 is a non-check helper but exited with return code 127
+[1489004394] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1489004394] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1489004394] wproc:   stderr line 01: /bin/sh: /bin/mail: No such file or directory
+[1489004394] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1489005597] Caught SIGTERM, shutting down...
+[1489005597] Successfully shutdown... (PID=28389)
+[1489005597] Event broker module 'NERD' deinitialized successfully.
