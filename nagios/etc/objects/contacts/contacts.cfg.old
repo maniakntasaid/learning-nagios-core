@@ -28,10 +28,15 @@
 
 define contact{
         contact_name                    nagiosadmin		; Short name of user
-	use				generic-contact		; Inherit default values from generic-contact template (defined above)
         alias                           Nagios Admin		; Full name of user
-
-        email                           nagios@localhost	; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+        email                           manikantasai.d@gmail.com	; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+	service_notification_period	normal			; normal time period definition in time periods
+	host_notification_period	normal			;normal time period definition
+	service_notification_period	normal
+	service_notification_options	w,u,c,r,f
+	host_notification_options	d,u,r,f
+	service_notification_commands	notify-service-by-email
+	host_notification_commands	notify-host-by-email
         }
 
 
@@ -46,9 +51,3 @@ define contact{
 
 # We only have one contact in this simple configuration file, so there is
 # no need to create more than one contact group.
-
-define contactgroup{
-        contactgroup_name       admins
-        alias                   Nagios Administrators
-        members                 nagiosadmin
-        }
